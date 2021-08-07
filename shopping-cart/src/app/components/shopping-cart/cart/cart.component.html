@@ -1,1 +1,12 @@
-<p>cart works!</p>
+<div class="card">
+  <div class="card-header">Cart</div>
+  <div *ngIf="this.cartItems.length === 0">Your cart is empty.</div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" *ngFor="let cartItem of cartItems">
+      <app-cart-item [cartItemInfo]="cartItem"></app-cart-item>
+    </li>
+    <li class="list-group-item active">
+      Total: {{ cartTotal | currency: "USD" }}
+    </li>
+  </ul>
+</div>

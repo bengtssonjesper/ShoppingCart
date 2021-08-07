@@ -23,7 +23,7 @@ import { CartItemComponent } from './components/shopping-cart/cart/cart-item/car
     ProductsComponent,
     ProductItemComponent,
     CartComponent,
-    CartItemComponent
+    CartItemComponent,
   ],
   imports: [
     BrowserModule

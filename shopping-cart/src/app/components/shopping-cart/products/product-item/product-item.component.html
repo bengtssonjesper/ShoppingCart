@@ -1,1 +1,30 @@
-<p>product-item works!</p>
+<div class="card shadow-sm">
+  <img
+    src="{{ this.productInfo.imageUrl }}"
+    alt="Penguins"
+    class="portfolioImg"
+  />
+
+  <div class="card-body">
+    <p class="card-text">
+      {{ this.productInfo.name }}
+    </p>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="btn-group">
+        <button
+          type="button"
+          class="btn btn-sm btn-primary"
+          (click)="addToCartHandler()"
+        >
+          Add to cart
+        </button>
+        <button type="button" class="btn btn-sm btn-outline-secondary">
+          Preview
+        </button>
+      </div>
+      <small class="text-muted">{{
+        this.productInfo.price | currency: "USD"
+      }}</small>
+    </div>
+  </div>
+</div>

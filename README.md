@@ -3,6 +3,7 @@ Shopping cart made in Angular
 
 ## Run
 To start the project:
-`json-server db.json`
-then
-`ng serve`
+<br>
+`json-server db.json`<br>
+then<br>
+`ng serve`<br>
